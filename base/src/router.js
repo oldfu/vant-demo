@@ -6,11 +6,11 @@ Vue.use(Router);
 const routes = [
   {
     path: '*',
-    redirect: '/goods'
+    redirect: '/home'
   },
   {
-    name: 'user',
-    component: () => import('./view/user'),
+    name: 'home',
+    component: () => import('./view/home'),
     meta: {
       title: '会员中心'
     }
